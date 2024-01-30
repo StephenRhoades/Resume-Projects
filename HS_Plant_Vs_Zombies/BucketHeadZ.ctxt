@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=BucketHeadZ
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ BucketHeadZ\ here.\r\n\ \r\n\ @author\ Stephen\ Rhoades\ \r\n\ @version\ 2/13/2021\r\n
+comment1.params=
+comment1.target=BucketHeadZ()
+comment2.params=
+comment2.target=void\ act()
+comment3.params=
+comment3.target=void\ die()
+comment4.params=
+comment4.target=void\ die2()
+numComments=5

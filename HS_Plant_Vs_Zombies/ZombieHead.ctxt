@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=ZombieHead
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ ZombieHead\ here.\r\n\ \r\n\ @author\ Stephen\ Rhoades\ \r\n\ @version\ 2/13/2021\r\n
+comment1.params=a\ b\ image
+comment1.target=ZombieHead(int,\ int,\ greenfoot.GreenfootImage)
+comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ ZombieHead\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment2.params=
+comment2.target=void\ act()
+comment3.params=
+comment3.target=void\ fade()
+numComments=4

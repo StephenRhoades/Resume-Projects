@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Tutorial
+comment0.text=\r\n\ generates\ a\ text\ box\ explaining\ the\ game.\r\n\ \r\n\ @author\ Stephen\ Rhoades\ \r\n\ @version\ 2/13/2021\r\n
+comment1.params=
+comment1.target=Tutorial()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Tutorial.\r\n\ \r\n
+comment2.params=
+comment2.target=void\ act()
+numComments=3

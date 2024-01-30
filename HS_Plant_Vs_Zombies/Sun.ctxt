@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=Sun
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Sun\ here.\r\n\ \r\n\ @author\ Stephen\ Rhoades\ \r\n\ @version\ 2/13/2021\r\n
+comment1.params=a\ b\ falling
+comment1.target=Sun(int,\ int,\ boolean)
+comment2.params=
+comment2.target=void\ act()
+numComments=3
