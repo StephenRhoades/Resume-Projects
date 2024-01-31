@@ -1,5 +1,5 @@
 -----
-README (Tetris is not shown here to avoid GMU Honor Code Violations, please contact me (email prefered) to be added to the private repository)
+README (Tetris and Chiquito's Store are not shown here to avoid GMU Honor Code Violations, please contact me (email prefered) to be added to the private repository)
 -----
 PROJECT TITLE: Various Projects.
 PURPOSE OF PROJECT: These are the projects that I have listed on my Resume to evidence my ability in developing code.
