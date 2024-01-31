@@ -1,0 +1,189 @@
+<html>
+	<head>
+		<style>
+                        body {
+                                background-color:C0D0DF;
+				font-size: 14;
+                                margin: 0px;
+                                padding: 0px;
+				margin-left:auto;
+                                margin-right:auto;
+				font-family: Tahoma, "Verdana", sans-serif;                                
+			}
+                        p {
+                                font-size: 20px;
+                                margin-left:auto;
+                                margin-right:auto;
+                        }
+                        h1 {
+                                text-align: center;
+                                font-family:monospace;
+				margin: 14px;
+				font-size: 42;
+                        }
+			h2 {
+                                text-align: center;
+			}
+			h3 {
+                                text-align: center;
+				font-size: 24;
+				margin: 24px;
+                        }
+			h4 {
+				text-align: center;
+				font-size: 22;
+				margin-left: 40%;
+				margin-right: 60%;
+				margin: 24px;
+			}
+			h5 {
+                                text-align: center;
+				margin: 4px;
+			}
+			h6 {
+				margin: 8px;
+				font-size: 12;
+			}
+			.head{
+				border-style:none none groove none;
+				background-color: 222222;
+				color:EEFAFF;
+				padding: 40px;
+			}
+			.main {
+				margin-left:auto;
+                                margin-right:auto;
+				background-color: C6D6E5;
+				border-style: outset;
+				padding: 40px;
+				width: 80%;
+			}
+			.end {
+				border-style:none;
+				background-color: 999999;
+				color: black;
+			}
+			.column {
+				float: left;
+				width: 45%;
+				padding: 10px;
+			}
+			.row:after {
+				content: "";
+				display: table;
+				clear: both;
+			}
+			.tab {
+				tab-size: 14px;
+			}
+                        .imgc {
+                                display:block;
+                                margin-left:auto;
+                                margin-right: auto;
+                                width: 30%;
+                        }
+                        .center {
+				display: block;
+                                margin-left:auto;
+                                margin-right:auto;
+                        }
+			.center2 {
+				display: block;
+                                margin-left:auto;
+                                margin-right:auto;
+                                width: 96%;
+                        }
+
+                </style>
+			<title>MachineLearning</title>
+
+		</head>
+	<body>
+		<div class = "head">
+		<h1>Machine Learning Progressing Diagnosis and Prognosis</h1>
+		</div>
+
+		<h5>Stephen Rhoades</h5>
+		<h5>College of Engineering and Computing, George Mason University</h5>
+		<h5>VA, United States</h5>
+		<h5>srhoade@gmu.edu </h5>
+
+
+<div class = "main">
+		
+		<h3>I. INTRODUCTION</h3>
+
+		<p>Artificial Intelligence is an ever-growing field of modern technological development that speaks to many people’s sense of wonder and/or their sense of fear with the representation of artificial intelligence in popular media spanning from the friendly Baymax of Big Hero 6 to the world ending Skynet of the Terminator series. A common concern with artificial intelligence is that it will go rogue and try to destroy humanity. However, the modern era of AI is nowhere near the level depicted in media for both the better and the worse depending on the example. Machine learning is in the forefront of most AI development in the current day and specifically with the medical field presents the biggest promise of improving lives. However, as of 2019 very little machine learning has been used in our current healthcare system despite the ever-growing usage of computer systems in medicine <sup><a href = "#ref">[1]</a> </sup>.</p>
+		<img src="image3.png" alt="From left to right Baymax, the Iron Giant, and the Terminator over a color gradient." class = center2>
+		<p>Machine learning has become a large field of research due to the vast diversity in the types of machine learning models and algorithms that can be implemented as well as the variety of potential problems machine learning models could assist in addressing in the active medical field such as laborious diagnosis procedures <sup><a href = "#ref">[3]</a></sup>, inconsistent forewarning of risk factors in large data sets  <sup><a href = "#ref">[4]</a></sup>, or high patient flow pressuring clinicians  <sup><a href = "#ref">[5]</a></sup>. Despite the nearly limitless potential, there are a variety of current failures in machine learning research and many avenues yet to be fully explored <sup><a href = "#ref">[6]</a></sup>. However, with the proper implementation and support, machine learning can help diagnose and prognose a variety of conditions such as COVID-19, cancer, stroke, or neurodegenerative disease through the trained analysis of health records, lab results, and specialized imaging.</p>
+<br></br>
+		<h3>II. TYPES OF MACHINE LEARNING</h3>
+
+		<p>There are three overall categories of approach in design that machine learning falls under, supervised, unsupervised, and reinforcement learning <sup><a href = "#ref">[4]</a></sup>.</p>
+		<img src="image2.png" alt="Diagrams of the three types of machine Learning." width = 80% class = center><a href = "#ref">[4]</a>
+		
+		<p>Supervised machine learning algorithms, the most prevalent approach for producing detailed diagnostic or prognostic results, are trained using labeled data sets which often require manual curation by an expert in the field to make connections between future inputs (features) and the appropriate output (labels) <sup><a href = "#ref">[1]</a>, <a href = "#ref">[4]</a></sup>. The resulting algorithm can then be applied to unlabeled data sets to determine the appropriate label for any given feature present in the new data set. <sup><a href = "#ref">[4]</a></sup></p>
+		<p>Unsupervised machine learning algorithms in comparison are trained using unlabeled data sets. They’re useful for separating the unlabeled data into large categories in a way that helps to reduce the complexity of the provided data <sup><a href = "#ref">[4]</a></sup>. These would primarily be used to indicate certain commonalities between otherwise difficult-to-process data such as genetic structures.</p>
+		<p>Lastly, reinforcement machine learning models operate under the practice of providing a model either a reward or punishment for a given action or outcome that, through trial and error, incentivizes the model to pursue said rewards and avoid said punishments by becoming increasingly accurate in its predictive capabilities. These types of models are the least used approach currently but are being investigated thoroughly <sup><a href = "#ref">[4]</a></sup>.</p>
+
+		<!--<a href = "#ref"><img src="image1.png" alt="Flow chart of machine learning model development." width = "500"> [1] </a> -->
+<br></br>
+		<h3>III. MEDICAL APPLICATIONS</h3>
+
+		<h4>A. Diagnostics</h4>
+
+		<p>One of the primary applications for machine learning in medicine is the ability to diagnose otherwise difficult-to-identify conditions. The diagnostic applications of these machine learning algorithms are diverse in their spread, but one of the more recent global medical events that machine learning has proven effective in detecting is that of COVID-19. Though most advantages of machine learning regarding COVID-19 are found in prognosis, a 2021 study showed that it could also be used for diagnosis when two researchers, Ismael and Sengur, used X-ray images to accurately detect COVID-19 <sup><a href = "#ref">[5]</a>, <a href = "#ref">[7]</a></sup>.</p> 
+		<img src="image6.png" alt="Chest X-rays used to diagnose COVID-19 with Machine Learning" width = 60% class = center><a href = "#ref">[7]</a>
+		<p>A more common and historied application of machine learning in the diagnostic field is that of identifying the ever-present disease, cancer. For solid tumor diagnosis, the usage of a deep convolutional neural network (DCNN) model (a type of machine learning) has been shown to increase the precision in determining the severity of thyroid cancer<sup><a href = "#ref">[8]</a></sup> with comparable accuracy to radiologist teams. The early detection and accurate diagnosis of cervical cancer is another field where machine learning has proven effective especially when compared to the arduous manual process that is standard<sup><a href = "#ref">[3]</a></sup>.</p> 
+		<p>Strokes are another condition that researchers have investigated for the further automation of diagnosis. Since strokes are such a common condition, ranking third in burden globally in 2013, and with ischemic strokes consisting of 80% of strokes, the more streamlined and accurate diagnosis of strokes will have a globally positive impact on the effective addressing of this condition <sup><a href = "#ref">[9]</a></sup>.</p> 
+		<p>One last implementation of machine learning for diagnosis can be found in the early detection of neurodegenerative diseases such as Alzheimer’s disease (AD), Parkinson’s disease (PD), and motor neuron disease (MND) <sup><a href = "#ref">[4]</a></sup>. With the current rise in the average age of the global population and studies indicating that that trend will continue, the occurrence of neurodegenerative diseases will continue to rise as age is the main risk factor <sup><a href = "#ref">[4]</a></sup>. This has already been shown to have a dramatic impact financially and on medical personnel workload which highlights the present need to improve how diagnosis and treatment of these diseases is handled <sup><a href = "#ref">[4]</a></sup>. There hasn’t been a definitive solution to the problem with the proposed model needing to be highly sophisticated and sensitive, but machine learning models are being actively developed to improve the accuracy and efficiency of said diagnoses <sup><a href = "#ref">[4]</a></sup>. </p>
+		<p>There are other conditions that machine learning has been proven effective in diagnosing, but these common and serious conditions help grant an idea of the broader picture.</p> 
+
+
+		<h4>B. Prognostics</h4>
+
+		<p>Another primary implementation of machine learning is in the development of accurate predictive data to better create treatment plans for those already diagnosed. As stated previously, COVID-19 has been a recent avenue of medical research, and, in 2020, a study by researchers Bari and Coffee developed a proof-of-concept AI model on a small set of data to predict severe cases of COVID-19 with an accuracy rate of 70-80% <sup><a href = "#ref">[10]</a></sup>. As recently as in a 2023 study, Serpil Ustebay and their team used machine learning to predict the need for intensive care and the mortality risk of patients<sup><a href = "#ref">[5]</a></sup>.</p> 
+		<img src="image5.png" alt="Diagrams of the prediction of COVID-19 through Machine Learning analyzing data sets" width = 60% class = center><a href = "#ref">[5]</a>
+		<p>As with diagnosis, cancer is a major field of machine learning prognosis due to the challenge of accurately predicting how cancer will develop using traditional statistical models <sup><a href = "#ref">[8]</a></sup>. With the increase in predictive accuracy, better plans for treatment can be implemented both increasing survival rates and decreasing unnecessary financial or workforce burdens. One example of machine learning assisting in the production of cancer prognostics is how a research team developed a machine learning model to analyze prior prognostics of stage III colon cancer patients to potentially reveal crucial trends for the future production of accurate prognostics <sup><a href = "#ref">[2]</a></sup>. In a study of the use of machine learning in the prediction of gastric cancer to forecast survival rates, the prediction nearly matching the actual results perfectly <sup><a href = "#ref">[8]</a></sup>. For breast cancer, there are some modern tests based on machine learning such as MammaPrint, which is used to predict the probability of an early-stage tumor spreading to nearby regions, or Oncotype DX, which calculates the chance of the cancer metastasizing in the next decade <sup><a href = "#ref">[8]</a></sup>.</p>
+		<p>Building off the previous discussion on the diagnosis of stroke, the prognosis production of the condition is heavily reliant on the diagnostic data gathered. Implementing the prior categorization of patient phenotypes has been effective in predicting stroke outcomes <sup><a href = "#ref">[9]</a></sup>. Similarly, the same data that is used to diagnose patients with neurodegenerative diseases early can be used to gather information and expand on the depth of knowledge on the common progression of the illness that would increase future predictive and prognostic accuracy for patients identified with the same endotype or phenotype <sup><a href = "#ref">[4]</a></sup>. </p> 
+		<p>Just like with diagnosis, there are other areas or medical conditions where the predictive power of machine learning can shine, but the usefulness of this form of artificial intelligence is not limited to generating diagnostics and prognostics.</p>
+
+		<h4>C. Auxiliary Applications</h4> 
+
+		<p>Though machine learning’s applications in the diagnosis and prognosis of a variety of different conditions may be one of the more directly lifesaving uses, the other areas where machine learning is being used to improve medicine are also important. One of these comes in theoretical testing where a scientist would be able to gather past data to help develop a hypothesis, use machine learning to model it and adjust it, and easily and rapidly replicate the process to simulate the larger clinical testing pool that would be required to test viability all before ever actually creating a product <sup><a href = "#ref">[8]</a></sup>. Similarly, the increase in precision medicine makes the distinct organization of diseases and conditions more important, especially for such things as genomic discoveries or the determination of auxiliary side effects of drugs based on the genetic traits of a given patient <sup><a href = "#ref">[9]</a></sup>.</p>
+		<p>When it comes to newly developed drugs going through actual clinical trials, an issue that often occurs is the difficulty in finding sufficient and appropriate participants for the testing. Even here, machine learning can help in curating information on a large set of potential patients’ medical records to assist in bringing together an appropriate group for a given trial <sup><a href = "#ref">[2]</a></sup>.</p>
+		<p>One of machine learning’s greatest strengths is its ability to process massive amounts of data quickly and effectively, so using this ability can also help in finding new insights from already collected healthcare data that might not be caught otherwise <sup><a href = "#ref">[4]</a></sup>. Without machine learning the ever-expanding data that is being gathered would not be able to be meaningfully processed where the capacity of human comprehension would be insufficient. This relates both to the extreme number of patients that data is gathered upon, and the exactingly precise and expansive data potentially gathered on a single patient through bloodwork or genomic profiling <sup><a href = "#ref">[1]</a></sup>. This is only relevant though when the machine learning model can smoothly interface with the present system of record keeping.</p>
+		
+		<img src="image4.png" alt="Diagrams of the stratification of patients through unsupervised learning." width = 50% class = center><a href = "#ref">[4]</a>
+<br></br>		
+		<h4>IV. PRESENT FAILURES IN RESEARCH</h4>
+
+		<p>With all these possibilities that machine learning promises to provide for the medical field, there are still a few areas of concern to address for the future. One of the more concerning issues that has become apparent is how the accuracy of machine learning models has been progressing slower with data sets that resemble real-life settings more than the cleaner data sets that are often used. Additionally, with many studies on progressing machine learning models, the margin of improvement does not even exceed the potential margin of error. Even the direction of research can often be motivated by the ease of data availability rather than actual medical need or exigence <sup><a href = "#ref">[6]</a></sup>.</p>
+		<p>As alluded to earlier, often there are issues with the data set that the model is being trained on as well. When data sets are too small, the machine learning models often prove to be too brittle or easy to break proper functionality. Many studies work with what they have to arrive at the best possible machine learning model under the circumstances, but until sample sizes match the needs of the models, practical real-life performance will remain unreliable or rare <sup><a href = "#ref">[6]</a></sup>.</p>
+<br></br>
+		<h4>V. CONCLUSION</h4>
+
+		<p>With the rapid development of computer technology, the possibilities of properly implementing the varying machine learning models are vast and sometimes intimidating to consider. However, with the proven effectiveness shown in many studies in diagnosing and prognosing for serious conditions such as COVID-19, cancer, stroke, or neurodegenerative diseases, it becomes a bit easier to understand how this newly developing tool can enable the healthcare system to better treat those patients in dire need. If the research failures can be addressed with improved data organization, gathering, and availability, then with enough time and effort the dream of ever more accurate and efficient treatment comes closer to reality.<p>
+
+<br></br><br></br>
+</div>
+<br></br>
+<div class = "end">
+<br></br>
+		<h6 id = "ref">REFERENCES</h6>
+
+		<h6 id = "[1]" class = "tab">[1]	<a href="https://doi.org/10.1056/NEJMra1814259"> A. Rajkomar, J. Dean, and I. Kohane, "Machine Learning in Medicine," The New England Journal of Medicine, vol. 380, no. 14, pp. 1347-1358, Apr. 2019, doi: 10.1056/NEJMra1814259.</a></h6> 
+		<h6 id = "[2]" class = "tab">[2]	<a href="https://www.nature.com/articles/s41591-020-01197-2"> M. May. "Eight ways machine learning is assisting medicine." Nature Medicine. https://www.nature.com/articles/s41591-020-01197-2 (accessed Sep. 5, 2023).</a></h6>
+		<h6 id = "[3]" class = "tab">[3]	<a href="https://doi.org/10.1109/TMI.2021.3097200"> Y. Dong et al., "A Polarization-Imaging-Based Machine Learning Framework for Quantitative Pathological Diagnosis of Cervical Precancerous Lesions," IEEE Transactions on Medical Imaging, vol. 40, no. 12, pp. 3728-3738, Dec. 2021, doi: 10.1109/TMI.2021.3097200.</a></h6>
+		<h6 id = "[4]" class = "tab">[4]	<a href="https://doi.org/10.1038/s41582-020-0377-8"> M. A. Myszczynska et al., "Applications of machine learning to diagnosis and treatment of neurodegenerative diseases", Nature Reviews Neurology, vol. 16, pp. 440–456, 2020, doi: 10.1038/s41582-020-0377-8.</a></h6>
+		<h6 id = "[5]" class = "tab">[5]	<a href="https://doi.org/10.1007/s11739-022-03101-x"> S. Ustebay, A. Sarmis, G. K. Kaya, and M. Sujan, "A comparison of machine learning algorithms in predicting COVID-19 prognostics," Internal and Emergency Medicine, vol. 18, no. 1, pp. 229–239, Jan. 2023, doi: 10.1007/s11739-022-03101-x.</a></h6>
+		<h6 id = "[6]" class = "tab">[6]	<a href="https://doi.org/10.1038/s41746-022-00592-y"> G. Varoquaux, V. Cheplygina, "Machine learning for medical imaging methodological failures and recommendations for the future," npj Digital Medicine, vol. 5, no. 48, Apr. 2022, doi: 10.1038/s41746-022-00592-y.</a></h6>
+		<h6 id = "[7]" class = "tab">[7]	<a href="https://doi.org/10.1016/j.eswa.2020.114054"> A.M. Ismael, A. Sengur, "Deep learning approaches for COVID-19 detection based on chest X-ray images," Expert Syst Appl, vol. 164, Feb. 2021, doi: 10.1016/j.eswa.2020.114054.</a></h6>
+		<h6 id = "[8]" class = "tab">[8]	<a href="https://doi.org/10.7759/cureus.31008"> K. Gaur and M. M. Jagtap, "Role of Artificial Intelligence and Machine Learning in Prediction, Diagnosis, and Prognosis of Cancer," Cureus, vol. 14, no. 11, pp. e31008, Nov. 2022, doi: 10.7759/cureus.31008.</a></h6>
+		<h6 id = "[9]" class = "tab">[9]	<a href="https://doi.org/10.1109/JBHI.2020.2976931"> S. F. Sung, C. Y. Lin, and Y. H. Hu, "EMR-Based Phenotyping of Ischemic Stroke Using Supervised Machine Learning and Text Mining Techniques," IEEE Journal of Biomedical and Health Informatics, vol. 24, no. 10, pp. 2922-2931, Oct. 2020, doi: 10.1109/JBHI.2020.2976931.</a></h6>
+		<h6 id = "[10]" class = "tab">[10]	<a href="https://theconversation.com/we-designed-an-experimental-ai-tool-to-predict-which-covid-19-patients-are-going-to-get-the-sickest-136125"> A. Bari, M. Coffee. "We designed an experimental AI tool to predict which COVID-19 patients are going to get the sickest." The Conversation. https://theconversation.com/we-designed-an-experimental-ai-tool-to-predict-which-covid-19-patients-are-going-to-get-the-sickest-136125 (accessed Sep. 5, 2023).</a></h6>
+<br></br>
+</div>	
+
+	</body>
+</html>
