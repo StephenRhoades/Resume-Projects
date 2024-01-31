@@ -1,3 +1,6 @@
+-----
+README
+-----
 PROJECT TITLE: Various Projects
 PURPOSE OF PROJECT: These are the projects that I have listed on my Resume to evidence my ability in developing code.
 VERSION or DATE: last edited 1/30/2024
