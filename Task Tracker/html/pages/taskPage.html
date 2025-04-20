@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../../css/openViewStyles.css" />
+    <link rel="stylesheet" href="../../css/pages/taskPage.css">
+    <script type="text/javascript" src="../../scripts/taskPage.js"></script>
+    <script type="text/javascript" src="../../scripts/task.js"></script>
+    <!-- All of the remainig scripts are only for testing purposes. -->
+    <!-- <script type="text/javascript" src="../../scripts/tests/testBase.js"></script> -->
+    <!-- <script type="text/javascript" src="../../scripts/tests/taskPageTest.js"></script> -->
+  </head>
+  
+</head>
+<body>
+	<h2>Edit Task</h2>
+    <!-- Form to edit task -->
+    <form id="myForm">
+        <label for="task-name">Task Name:</label>
+        <input type="text" id="task-name" name="task-name" required>
+
+        <label for="task-desc">Description:</label>
+        <textarea id="task-desc" name="task-desc" required></textarea>
+
+        <label for="task-date">Date:</label>
+        <input type="date" id="task-date" name="task-date" required>
+
+        <label for="task-time">Time:</label>
+        <input type="time" id="task-time" name="task-time" required>
+                
+        <label for="task-reminder">New Reminder:</label>
+
+        <div class="row">
+            <div class="column">
+              <label for="task-rem-days">days:</label>
+              <input type="number" id="days" name="days" min="0" max="365">
+            </div>
+            <div class="column">
+              <label for="task-rem-hours">hours:</label>
+              <input type="number" id="hours" name="hours" min="0" max="24">
+            </div>
+            <div class="column">
+              <label for="task-rem-minutes">minutes:</label>
+              <input type="number" id="minutes" name="minutes" min="0" max="60">
+            </div>
+        </div>
+        <button class="add-reminder" id="add-reminder">Add Reminder</button>
+
+        <label for="task-reminder-list">Reminders:</label>
+        <div class="form-group">
+            <ul id="reminder-list">There are no reminders?</ul>
+        </div>
+
+        <div class="button-container">
+            <button id="cancel-task-button" class="cancel-btn">Cancel</button>
+            <button id="delete-task-button" class="delete-btn">Delete</button>
+            <button type="submit" form="myForm" class="save-btn">Save</button>
+        </div>
+        
+    </form>
+
+</body>
+</html>
+
+<!-- Other style (not sure if this is what we want) -->
+<!-- <div class="task-list">
+    <div class="task">
+        <div class="task-actions">
+            <button class="edit" id="edit-button-id">Edit</button>
+            <button class="delete" id="delete-button-id">Delete</button>
+        </div>
+        Task 1
+        <button class="expand-btn" id="expand-btn-id">Expand</button>
+        <div class="task-details">
+            <p><strong>Task Name: </strong></p>
+            <p><strong>Date:</strong> </p>
+            <p><strong>Time:</strong> </p>
+            <p><strong>Description:</strong> </p>
+        </div>
+    </div>
+    Repeat similar structure for Task 2 and Task 3
+</div> -->

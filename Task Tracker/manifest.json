@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Task Tracker",
+  "description": "An extension that will help in tracking tasks through organization and reminders",
+  "version": "1.0.0",
+  "permissions": [
+    "storage", 
+    "alarms", 
+    "notifications",
+    "contextMenus"
+  ],
+  "background": {
+     "service_worker": "scripts/background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": [
+        "scripts/views/calendarView.js",
+        "scripts/views/listView.js",
+        "scripts/views/openView.js",
+        "scripts/settings.js",
+        "scripts/task.js",
+        "scripts/taskPage.js"
+      ]
+    }
+  ],
+  "action": {
+    "default_popup": "html/pages/calendarView.html",
+    "default_icon": "images/taskIcon.png"
+  }
+}

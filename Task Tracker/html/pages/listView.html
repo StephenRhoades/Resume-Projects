@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>List View</title>
+    <link rel="stylesheet" type="text/css" href="../../css/pages/listView.css" />
+    <script type="text/javascript" src="../../scripts/task.js"></script>
+    <script type="text/javascript" src="../../scripts/views/listView.js"></script>
+    <!-- All of the remainig scripts are only for testing purposes. -->
+    <!-- <script type="text/javascript" src="../../scripts/tests/testBase.js"></script> -->
+    <!-- <script type="text/javascript" src="../../scripts/tests/listViewTest.js"></script> -->
+  </head>
+  <body>
+    <h2>List View</h2>
+    <div class="top-buttons-container">
+      <a href="../openView.html"><button>Add Task</button></a>
+      <a href="calendarView.html"><button>Calendar View</button></a>
+      <a href="settings.html"><button>Settings</button></a>
+    </div>
+    <div class="container" id="listViewMainContainer">
+      <h1>Tasks! :D</h1>
+      <button id="show-tasks">Show me my tasks</button>
+      <button id="sort-deadline">Sort by Deadline</button>
+      <button id="sort-alpha">Sort Alphabetically</button>
+      <button id="clear-tasks">Clear</button>
+      <div id="taskContainer"></div> <!-- Ensure taskContainer exists -->
+    </div>
+  </body>
+  
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Tracker Calendar</title>
+    <link rel="stylesheet" href="../../css/pages/calendarView.css">
+    <script type="text/javascript" src="../../scripts/task.js"></script>
+    <script type="text/javascript" src="../../scripts/views/calendarView.js"></script>
+    <!-- All of the remainig scripts are only for testing purposes. -->
+    <!-- <script type="text/javascript" src="../../scripts/tests/testBase.js"></script> -->
+    <!-- <script type="text/javascript" src="../../scripts/tests/calendarViewTest.js"></script> -->
+</head>
+<body>
+    <div class="buttons-container" id="buttons-container">
+        <a href="../openView.html"><button class="button">Add Task</button></a>
+        <a href="listView.html"><button class="button">List View</button></a>
+        <a href="settings.html"><button class="button">Settings</button></a>
+    </div>
+    <div class="view-toggle-container"> 
+        <button id="monthlyViewButton" class="view-tab active">Monthly View</button>
+        <button id="weeklyViewButton" class="view-tab">Weekly View</button>
+    </div>
+    <div class="calendar-container" id="calendar-container">
+        <div class="calendar-header">
+            <button id="prevMonth"><</button>
+            <h2 id="monthName"></h2>
+            <button id="nextMonth">></button>
+        </div>
+        <div class="calendar">
+            <div class="week-days">
+                <span>Sun</span>
+                <span>Mon</span>
+                <span>Tue</span>
+                <span>Wed</span>
+                <span>Thu</span>
+                <span>Fri</span>
+                <span>Sat</span>
+            </div>
+            <div class="days" id="calendarDays"></div>
+        </div>
+    </div>
+</body>
+</html>

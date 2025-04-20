@@ -1,0 +1,79 @@
+<html>
+  <head>
+    <title>The Task Tracker</title>
+    <link rel="stylesheet" type="text/css" href="../css/openViewStyles.css" />
+    <script type="text/javascript" src="../scripts/task.js"></script>
+    <script type="text/javascript" src="../scripts/views/openView.js"></script>
+    <!-- All of the remainig scripts are only for testing purposes. -->
+    <!-- <script type="text/javascript" src="../scripts/background.js"></script>
+    <script type="text/javascript" src="../scripts/tests/testBase.js"></script>
+    <script type="text/javascript" src="../scripts/tests/backgroundTest.js"></script> -->
+    <!-- <script type="text/javascript" src="../scripts/tests/openViewTest.js"></script> -->
+  </head>
+	
+  <body>
+
+    <div class="buttons-container" id="buttons-container">
+      <a href="pages/calendarView.html"><button>Calendar View</button></a>
+	    <a href="pages/listView.html"><button>List View</button></a>
+	    <a href="pages/settings.html"><button>Settings</button></a>
+    </div>
+  
+    <div class="add-task-section" id="add-task-section">
+      <h2>Add Task</h2>
+      <form id="myForm">
+        <div class="form-group">
+          <label for="task-date">Date:</label>
+          <input type="date" id="task-date" name="task-date" required>
+        </div>
+        <div class="form-group">
+          <label for="task-time">Time:</label>
+          <input type="time" id="task-time" name="task-time" required>
+        </div>
+        <div class="form-group">
+          <label for="task-name">Task Name:</label>
+          <input type="text" id="task-name" name="task-name" placeholder="Enter task name" required>
+        </div>
+        <div class="form-group">
+          <label for="task-desc">Description:</label>
+          <textarea id="task-desc" name="task-desc" rows="4" placeholder="Enter task description"></textarea>
+        </div>
+
+        <div id="task-recur" class="form-group dropdown-check-list" tabindex="100">
+          <span class="anchor">Repeat Every</span>
+          <ul class="items">
+            <li><input type="checkbox" />Monday </li>
+            <li><input type="checkbox" />Tuesday</li>
+            <li><input type="checkbox" />Wednesday </li>
+            <li><input type="checkbox" />Thursday </li>
+            <li><input type="checkbox" />Friday</li>
+            <li><input type="checkbox" />Saturday </li>
+            <li><input type="checkbox" />Sunday</li>
+          </ul>
+        </div>
+	      
+        
+        <div class="form-group">
+          <label>Remind before</label>
+          <div class="row">
+            <div class="column">
+              <label for="task-rem-days">days:</label>
+              <input type="number" id="days" name="days" min="0" max="365">
+            </div>
+            <div class="column">
+              <label for="task-rem-hours">hours:</label>
+              <input type="number" id="hours" name="hours" min="0" max="24">
+            </div>
+            <div class="column">
+              <label for="task-rem-minutes">minutes:</label>
+              <input type="number" id="minutes" name="minutes" min="0" max="60">
+            </div>
+          </div>
+        </div>
+
+        <button id="submit-task-button">Add Task</button>
+      </form>
+    </div>
+	  
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../../css/pages/settings.css" />
+    <script type="text/javascript" src="../../scripts/settings.js"></script>
+    <!-- All of the remainig scripts are only for testing purposes. -->
+    <!-- <script type="text/javascript" src="../../scripts/tests/testBase.js"></script> -->
+    <!-- <script type="text/javascript" src="../../scripts/tests/settingsTest.js"></script> -->
+  </head>
+  
+  <body>
+    <div class="settings-container" id="settings-section">
+      <div class="settings-header">
+        Extension Settings
+      </div>
+	  <a href="calendarView.html"><button>Calendar View</button></a>
+	  <a href="listView.html"><button>List View</button></a>
+  
+      <div class="settings-section">
+        <h2>Appearance</h2>
+        <div class="toggle">
+          <label for="dark-mode">Dark Mode</label>
+          <input type="checkbox" id="dark-mode" >
+        </div>
+        <div class="toggle">
+          <label for="compact-view">Compact View (not functional)</label>
+          <input type="checkbox" id="compact-view">
+        </div>
+      </div>
+  
+      <div class="settings-section">
+        <h2>Preferences</h2>
+        <label for="theme-select">Select Theme</label>
+        <select id="theme-select" class="dropdown">
+          <option value="default">Default</option>
+          <option value="blue">Blue</option>
+          <option value="green">Green</option>
+          <option value="pink">Pink</option>
+        </select>
+      </div>
+  
+    </div>
+</body>
+</html>
